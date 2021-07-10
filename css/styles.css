@@ -1,0 +1,114 @@
+body{
+    overflow: auto;
+}
+li{
+    padding: 15px;
+}
+li a{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.navbar-collapse{
+    margin-left: 545px;
+}
+.cardmenu{
+    background: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+    margin-top: -15px;
+    min-width: 36vw;
+}
+.dropdown-menu{
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+.menusection{
+    padding-right: 5px;
+}
+.menulogo{
+    padding-left: 16px;
+}
+.menuhead{
+    color: #264a9f;
+    font-weight: bolder;
+    padding-left: 16px;
+}
+.menucontent{
+    color: rgba(7,30,84,.6);
+    font-size: 12.32px;
+    padding-left: 16px;
+    margin-top: -9px;
+}
+.heading{
+    font-size: 30px; 
+    color: #264a9f;
+}
+.scrollImg{
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+}
+.text-color{
+    color: rgba(7,30,84,.8);
+}
+.section-color{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+form{
+    padding: 30px 50px 50px;
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+    border: none;
+}
+.form-heading{
+    font-size: 22px;
+    text-align: left;
+    color: #264a9f;
+}
+.form-inputLabel{
+    color: #071e54;
+    font-size: 13px;
+    opacity: .5;
+    margin-left: 14px;
+}
+.form-sal{
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: rgb(191 195 207) 3px 3px 6px inset, rgb(255 255 255) -3px -3px 6px inset;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15% 0% 20% 6%;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+.form-salutation{
+    padding-left: 17px;
+    opacity: 0.8;
+}
+.form-input-text{
+    border-radius: 10px;
+    margin-top: 8px;
+    color: #071e54;
+    opacity: .8;
+    box-shadow: inset 3px 3px 6px #bfc3cf, inset -3px -3px 6px #fff;
+    background: transparent;
+    padding: 20px 10px 20px 25px;
+    font-size: 13px;
+    border: 0;
+}
+.form-input-text:focus{
+    background: transparent;
+    box-shadow: inset 6px 6px 10px #bfc3cf, inset -5px -5px 8px #fff
+}
+.form-input-error{
+    color: #dc3545;
+    margin-left: 25px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
