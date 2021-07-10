@@ -1,0 +1,28 @@
+@media screen and (max-width: 992px) {
+    .responsive-content {
+      text-align: center;
+    }
+    .form-radio-div{
+      display: block;
+    }
+    .section-1{
+      text-align: center;
+    }
+    .responsive-section{
+      text-align: -webkit-center;
+    }
+}
+@media screen and (max-width: 1200px) {
+  .responsive-navbar{
+    margin-left: 27%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pic1{
+    margin-top: 15px;
+    margin-left: 50%;
+  }
+  .heading{
+    text-align: center;
+  }
+}
