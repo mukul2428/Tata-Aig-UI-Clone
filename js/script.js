@@ -37,4 +37,22 @@ $(document).mouseup(function (e) {
     }
 });
 
+function form_list_card() {
+
+    const g = document.getElementById('form-list-visble');
+    // console.log(g);
+    for (var i = 0, len = g.children.length; i < len; i++) {
+
+        (function (index) {
+            g.children[i].onclick = function () {
+                // console.log(index);
+                let element = document.getElementById("form-list-visble").children[index];
+                let childElem = element.children[0].innerHTML;
+                document.getElementById("make").value = childElem;
+            }
+        })(i);
+
+    }
+}
+
 

@@ -157,6 +157,7 @@ form{
     background: transparent linear-gradient(276deg,rgba(13,53,148,.898039),#35d3e1) 0 0 no-repeat padding-box;
 }
 .form-list-card{
+    cursor: pointer;
     display: none;
     /* width: inherit; */
     z-index: 1;

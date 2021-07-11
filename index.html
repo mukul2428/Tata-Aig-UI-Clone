@@ -283,40 +283,32 @@
                     <div class="col-md-4 col-xs-12 mt-4 form-list-visible">
                         <label class="form-inputLabel" for="make">Make</label>
                         <div class="border-0">
-                            <input class="form-input-text form-control form-input-font" id="make" type="text" onclick="form_list_visible() ">
+                            <input class="form-input-text form-control form-input-font" maxlength="0" id="make" type="text" value="" onclick="form_list_visible()" style="caret-color: transparent;">
                         </div>
-                        <div class="form-list-card mt-2" id="form-list-visble" style="display: none;">
+                        <div class="form-list-card mt-2" id="form-list-visble" style="display: none;" onclick="form_list_card()">
 
-                            <!-- <ul style="text-align: left;">
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li><hr>
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li><hr>
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li><hr>
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li><hr>
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li><hr>
-                                <li class="form-list form-inputLabel" style="list-style: none;">tata</li>
-                            </ul> -->
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-1" onclick="form_list_hover()">tata</div>
+                                <div class="form-list form-inputLabel">tata</div>
                                 <hr>
                             </div>
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-2" onclick="form_list_hover()">hyundai</div>
+                                <div class="form-list form-inputLabel">hyundai</div>
                                 <hr>
                             </div>
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-3" onclick="form_list_hover()">premier</div>
+                                <div class="form-list form-inputLabel">premier</div>
                                 <hr>
                             </div>
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-4" onclick="form_list_hover()">skoda</div>
+                                <div class="form-list form-inputLabel">skoda</div>
                                 <hr>
                             </div>
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-5" onclick="form_list_hover()">mitsubishi</div>
+                                <div class="form-list form-inputLabel">mitsubishi</div>
                                 <hr>
                             </div>
                             <div class="hover">
-                                <div class="form-list form-inputLabel" id="form-list-item-6" onclick="form_list_hover()">toyoto</div>
+                                <div class="form-list form-inputLabel">toyoto</div>
                             </div>
                         </div>
                     </div>
