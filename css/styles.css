@@ -1,3 +1,6 @@
+.logo{
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+}
 li{
     padding: 15px;
 }
@@ -109,7 +112,7 @@ form{
     opacity: .8;
     box-shadow: inset 3px 3px 6px #bfc3cf, inset -3px -3px 6px #fff;
     background: transparent;
-    padding: 20px 10px 20px 25px;
+    padding: 14px 20px;
     font-size: 13px;
     border: 0;
 }
@@ -152,4 +155,28 @@ form{
 }
 .form-radio-active{
     background: transparent linear-gradient(276deg,rgba(13,53,148,.898039),#35d3e1) 0 0 no-repeat padding-box;
+}
+.form-list-card{
+    display: none;
+    /* width: inherit; */
+    z-index: 1;
+    position:absolute; 
+    border-radius: 10px;
+    max-height: 50%;
+    overflow:auto;
+    background-color: #e5e6eb;
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+}
+.form-list-card hr{
+    margin: 0;
+    border: 1px solid aqua;
+}
+.form-list-card .hover:hover{
+    background-color: aqua;
+}
+/* .form-list-visible:hover .form-list-card{
+    display: block;
+} */
+.form-list{
+    padding: 10px 15px 12px 6px;
 }
