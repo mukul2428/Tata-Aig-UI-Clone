@@ -89,21 +89,10 @@ form{
     opacity: .5;
     margin-left: 14px;
 }
-.form-sal{
-    align-items: center;
-    border-radius: 12px;
-    box-shadow: rgb(191 195 207) 3px 3px 6px inset, rgb(255 255 255) -3px -3px 6px inset;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15% 0% 20% 6%;
-    font-size: 13px;
-    opacity: 0.8;
-    margin-top: 8px;
-}
 .form-salutation{
-    padding-left: 17px;
-    opacity: 0.8;
+    width: 22px;
+    float: right;
+    
 }
 .form-input-text{
     border-radius: 10px;

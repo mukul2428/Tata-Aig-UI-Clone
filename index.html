@@ -145,13 +145,13 @@
                         <div class="row no-gutters">
 
                             <div class="col-md-4 col-sm-4 col-xs-4 col-4">
-                                <label class="form-inputLabel" for="sal">Title</label>
-                                <div class="form-sal border-0">
-                                    <div class="form-salutation" id="sal">Mr.</div>
-                                    <img src="images/pic6.png" alt="down" style="height: 17px; margin-left: 25%;">
+                                <label class="form-inputLabel" for="title">Title</label>
+                                <div class="border-0 form-input-text responsive-salutation">
+                                    Mr.
+                                    <span><img class="form-salutation responsive-sal" src="images/pic6.png" alt=""></span>  
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-4 col-4" style="width:auto;">
+                            <div class="col-md-8 col-sm-8 col-xs-8 col-8">
                                 <label class="form-inputLabel" for="first-name">First Name</label>
                                 <div class="border-0">
                                     <input class="form-input-text form-control form-input-font" id="first-name"
@@ -280,7 +280,7 @@
                                 type="text" value="" autocomplete="off" onclick="form_list_visible()"
                                 style="caret-color: transparent;">
                         </div>
-                        
+
                         <div class="form-list-card mt-2" id="form-list-visble" style="display: none;"
                             onclick="form_list_card()">
 
@@ -342,7 +342,8 @@
                             Date</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="existingpolicyexpirydate"
-                                type="text" placeholder="dd/mm/yyyy" value="" onclick="form_input_data(id)" autocomplete="off">
+                                type="text" placeholder="dd/mm/yyyy" value="" onclick="form_input_data(id)"
+                                autocomplete="off">
                         </div>
                         <small style="display: none;" id="small-existingpolicyexpirydate">
                             <div class="form-input-error pt-1">Existing policy Expiry Date Is Required</div>

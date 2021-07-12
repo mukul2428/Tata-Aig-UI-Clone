@@ -11,10 +11,20 @@
     .responsive-section{
       text-align: -webkit-center;
     }
+    .responsive-salutation{
+      width: 60px;
+      padding-left: 11px;
+    }
+    .responsive-sal{
+      width: 20px;
+    }
 }
 @media screen and (max-width: 1200px) {
   .responsive-navbar{
     margin-left: 27%;
+  }
+  .responsive-sal{
+    margin-right: -10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -24,5 +34,12 @@
   }
   .heading{
     text-align: center;
+  }
+  .responsive-salutation{
+    width: auto;
+    padding-left: auto;
+  }
+  .responsive-sal{
+    width: 22px;
   }
 }
