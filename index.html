@@ -21,7 +21,7 @@
 
 </head>
 
-<body >
+<body>
 
     <header>
         <div class="container my-2">
@@ -137,7 +137,7 @@
         </div>
 
         <div class="container pt-5 pb-3 section-2">
-            <form action="">
+            <form action="" id="form-input-data">
                 <div class="form-heading"">Motor Third Party Liability</div>
                 
                 <div class=" row">
@@ -155,9 +155,10 @@
                                 <label class="form-inputLabel" for="first-name">First Name</label>
                                 <div class="border-0">
                                     <input class="form-input-text form-control form-input-font" id="first-name"
-                                        type="text" placeholder="John">
+                                        type="text" placeholder="John" value="" onclick="form_input_data(id)"
+                                        autocomplete="off">
                                 </div>
-                                <small>
+                                <small style="display: none;" id="small-first-name">
                                     <div class="form-input-error pt-1">First Name Is Required</div>
                                 </small>
                             </div>
@@ -169,9 +170,9 @@
                         <label class="form-inputLabel" for="last-name">Last Name</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="last-name" type="text"
-                                placeholder="Doe">
+                                placeholder="Doe" value="" onclick="form_input_data(id)" autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-last-name">
                             <div class="form-input-error pt-1">Last Name Is Required</div>
                         </small>
                     </div>
@@ -180,9 +181,9 @@
                         <label class="form-inputLabel" for="mobile-no">Mobile Number</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="mobile-no" type="number"
-                                placeholder="9876543210">
+                                placeholder="9876543210" value="" onclick="form_input_data(id)" autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-mobile-no">
                             <div class="form-input-error pt-1">Mobile Number Is Required</div>
                         </small>
                     </div>
@@ -190,9 +191,10 @@
                         <label class="form-inputLabel" for="emailid">Email</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="emailid" type="email"
-                                placeholder="john.doe@email.com">
+                                placeholder="john.doe@email.com" value="" onclick="form_input_data(id)"
+                                autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-emailid">
                             <div class="form-input-error pt-1">Email ID Is Required</div>
                         </small>
                     </div>
@@ -200,9 +202,9 @@
                         <label class="form-inputLabel" for="city">City</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="city" type="text"
-                                placeholder="Mumbai">
+                                placeholder="Mumbai" value="" onclick="form_input_data(id)" autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-city">
                             <div class="form-input-error pt-1">Enter City Name</div>
                         </small>
                     </div>
@@ -230,9 +232,10 @@
                         <label class="form-inputLabel" for="registrationno">Registration Number</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="registrationno" type="text"
-                                placeholder="john.doe@email.com">
+                                placeholder="MH01AB1234" value="" onclick="form_input_data(id)" autocomplete="off"
+                                style="text-transform: uppercase;">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-registrationno">
                             <div class="form-input-error pt-1">Vehicle Registration Number Is Required</div>
                         </small>
                     </div>
@@ -240,25 +243,15 @@
                         <label class="form-inputLabel" for="registrationdate">Registration Date</label>
                         <div class="border-0">
                             <input class="form-input-text form-control form-input-font" id="registrationdate"
-                                type="text" placeholder="dd/mm/yyyy">
+                                type="text" placeholder="dd/mm/yyyy" value="" onclick="form_input_data(id)"
+                                autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-registrationdate">
                             <div class="form-input-error pt-1">Registration Date Is Required</div>
                         </small>
                     </div>
                     <script>
-                        // $('#registrationdate').on("change keyup paste", function () {
-                        //     let dateLength = document.getElementById("registrationdate").innerHTML.length;
-                        //     console.log(dateLength); 
-                        // });
 
-                        // setInterval(function () {
-                        //     let dateLength = document.getElementById("registrationdate").value.length;
-                        //     if(dateLength == 2)
-                        //     {
-                        //         document.getElementById("registrationdate").value  = document.getElementById("registrationdate").value + "/"; 
-                        //     }
-                        // }, 10);
                         const phoneNoRef = document.querySelector('#registrationdate');
                         phoneNoRef.addEventListener('keypress', (evt) => {
                             const code = evt.keyCode;
@@ -283,9 +276,13 @@
                     <div class="col-md-4 col-xs-12 mt-4 form-list-visible">
                         <label class="form-inputLabel" for="make">Make</label>
                         <div class="border-0">
-                            <input class="form-input-text form-control form-input-font" maxlength="0" id="make" type="text" value="" onclick="form_list_visible()" style="caret-color: transparent;">
+                            <input class="form-input-text form-control form-input-font" maxlength="0" id="make"
+                                type="text" value="" autocomplete="off" onclick="form_list_visible()"
+                                style="caret-color: transparent;">
                         </div>
-                        <div class="form-list-card mt-2" id="form-list-visble" style="display: none;" onclick="form_list_card()">
+                        
+                        <div class="form-list-card mt-2" id="form-list-visble" style="display: none;"
+                            onclick="form_list_card()">
 
                             <div class="hover">
                                 <div class="form-list form-inputLabel">tata</div>
@@ -333,19 +330,21 @@
                     <div class="col-md-4 col-xs-12 mt-4">
                         <label class="form-inputLabel" for="existingpolicyinsurer">Existing Policy Insurer</label>
                         <div class="border-0">
-                            <input class="form-input-text form-control form-input-font" id="existingpolicyinsurer" type="text">
+                            <input class="form-input-text form-control form-input-font" id="existingpolicyinsurer"
+                                type="text" value="" onclick="form_input_data(id)" autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-existingpolicyinsurer">
                             <div class="form-input-error pt-1">Enter Existing Insurer Name</div>
                         </small>
                     </div>
                     <div class="col-md-4 col-xs-12 mt-4">
-                        <label class="form-inputLabel" for="existingpolicyexpirydate">Existing Policy Expiry Date</label>
+                        <label class="form-inputLabel" for="existingpolicyexpirydate">Existing Policy Expiry
+                            Date</label>
                         <div class="border-0">
-                            <input class="form-input-text form-control form-input-font" id="existingpolicyexpirydate" type="text"
-                                placeholder="dd/mm/yyyy">
+                            <input class="form-input-text form-control form-input-font" id="existingpolicyexpirydate"
+                                type="text" placeholder="dd/mm/yyyy" value="" onclick="form_input_data(id)" autocomplete="off">
                         </div>
-                        <small>
+                        <small style="display: none;" id="small-existingpolicyexpirydate">
                             <div class="form-input-error pt-1">Existing policy Expiry Date Is Required</div>
                         </small>
 

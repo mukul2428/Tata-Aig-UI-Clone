@@ -37,6 +37,7 @@ $(document).mouseup(function (e) {
     }
 });
 
+//function to show form-list-items in the input area
 function form_list_card() {
 
     const g = document.getElementById('form-list-visble');
@@ -54,5 +55,32 @@ function form_list_card() {
 
     }
 }
+
+//function for hiding small tag
+function form_input_data(id) {
+
+    if (document.getElementById(id).value == "") {
+        document.getElementById("small-" + id).style.display = "block";
+    }
+
+    $("#" + id).on("input", (inputVar) => {
+
+        let val = inputVar.currentTarget.value;
+        console.log(val);
+        document.getElementById(id).setAttribute('value', val);
+
+        if (document.getElementById(id).value == "") {
+            document.getElementById("small-" + id).style.display = "block";
+        }
+        else {
+            document.getElementById("small-" + id).style.display = "none";
+        }
+
+    });
+}
+
+
+
+
 
 
