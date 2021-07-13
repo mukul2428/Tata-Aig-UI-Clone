@@ -2,6 +2,9 @@
     .responsive-content {
       text-align: center;
     }
+    .responsive-navbar{
+      padding-left: 5vw;
+    }
     .form-radio-div{
       display: block;
     }
@@ -23,6 +26,10 @@
     }
     .section-3-subheading-data{
       padding: 0px 14px 15px;
+    }
+    .dropdown-menu{
+      margin-right: 8vw;
+      margin-left: -22vw;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -48,6 +55,9 @@
   .responsive-sal{
     width: 22px;
   } 
+  .section-4{
+    width: 100vw !important;
+  }
   .section-4-tree{
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
@@ -101,15 +111,24 @@
 }
   
 @media screen and (max-width: 357px) {
+  .responsive-navbar{
+    padding-left: 0px !important;
+  }
   .responsive-sal{
     width: 13px;
   }
   .responsive-salutation{
     width: 61px;
   }
+  .section-3{
+    width: 100vw !important;
+  }
   .responsive-icons{
     display: grid !important;
     grid-template-columns: repeat(2,1fr);
+  }
+  .responsive-icons>.fa{
+    margin-top: 12px !important;
   }
 }
 @media screen and (max-width: 1071px) {
@@ -119,5 +138,13 @@
   }
   .section-5-card>div{
     padding-left: 25px !important;
+  }
+}
+@media screen and (max-width: 424px) {
+  li>aside{
+    flex-direction: column;
+  }
+  li>aside>.menusection{
+    text-align: center;
   }
 }
