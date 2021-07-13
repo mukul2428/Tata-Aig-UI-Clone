@@ -18,6 +18,12 @@
     .responsive-sal{
       width: 20px;
     }
+    .section-3-subheading{
+      padding: 16px 12px 0px;
+    }
+    .section-3-subheading-data{
+      padding: 0px 14px 15px;
+    }
 }
 @media screen and (max-width: 1200px) {
   .responsive-navbar{
@@ -41,5 +47,38 @@
   }
   .responsive-sal{
     width: 22px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .section-3-flex{
+    /* display: flex;
+    flex-direction: column; */
+    display: none !important;
+  }
+  #carouselExampleIndicators{
+    display: block !important;
+  }
+  .section-3-subheading{
+    
+    padding: 24px 50px 0px;
+  }
+  .section-3-subheading-data{
+    padding: 0px 50px 24px;
+  }
+  #card-1, #card-2, #card-3{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+  
+@media screen and (max-width: 357px) {
+  .responsive-sal{
+    width: 13px;
+  }
+  .responsive-salutation{
+    width: 61px;
   }
 }
