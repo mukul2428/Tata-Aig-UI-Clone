@@ -85,9 +85,11 @@ function section_6_card(){
     // console.log(card);
     if(card == "none"){
         document.getElementById("section-6-card").style.display = "block";
+        document.getElementById("section-6-dash").style.display = "block";
     }
     else{
         document.getElementById("section-6-card").style.display = "none";
+        document.getElementById("section-6-dash").style.display = "none";
     }
 }
 
