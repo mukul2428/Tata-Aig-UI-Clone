@@ -328,3 +328,15 @@ input:checked~.custom-control-label:after{
     top: 50%;
     transform: translateY(-50%);
 }
+.section-6-card-data{
+    padding-right: 50px;
+}
+.section-6-card-data>p, .section-6-hidden-data>p{
+    color: rgba(7,30,84,.6); font-size: 14px;
+}
+.footer-div{
+    font-size: 12px; text-align: center!important; color: #fff!important;
+}
+.footer-div>span{
+    border-right: 1px solid #dee2e6!important;
+}
