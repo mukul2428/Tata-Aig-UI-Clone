@@ -91,6 +91,48 @@ function section_6_card(){
     }
 }
 
+function section_6_hidden_card_1(){
+    let card = document.getElementById("section_6_hidden_card_1").style.display;
+    // console.log(card);
+    if(card == "none"){
+        document.getElementById("section_6_hidden_card_1").style.display = "block";
+    }
+    else{
+        document.getElementById("section_6_hidden_card_1").style.display = "none";
+    }
+}
+function section_6_hidden_card_2(){
+    let card = document.getElementById("section_6_hidden_card_2").style.display;
+    // console.log(card);
+    if(card == "none"){
+        document.getElementById("section_6_hidden_card_2").style.display = "block";
+    }
+    else{
+        document.getElementById("section_6_hidden_card_2").style.display = "none";
+    }
+}
+function section_6_hidden_card_3(){
+    let card = document.getElementById("section_6_hidden_card_3").style.display;
+    // console.log(card);
+    if(card == "none"){
+        document.getElementById("section_6_hidden_card_3").style.display = "block";
+    }
+    else{
+        document.getElementById("section_6_hidden_card_3").style.display = "none";
+    }
+}
+function section_6_hidden_card_4(){
+    let card = document.getElementById("section_6_hidden_card_4").style.display;
+    // console.log(card);
+    if(card == "none"){
+        document.getElementById("section_6_hidden_card_4").style.display = "block";
+    }
+    else{
+        document.getElementById("section_6_hidden_card_4").style.display = "none";
+    }
+}
+
+
 
 
 
