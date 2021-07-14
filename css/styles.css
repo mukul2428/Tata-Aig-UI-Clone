@@ -288,10 +288,43 @@ input:checked~.custom-control-label:after{
     margin-bottom: 120px;
 }
 .section-5-card-data{
+    cursor: pointer;
     font-size: 13px;
     color: rgba(7,30,84,.6);
     padding: 9.8px 0;
 }
 .section-5-dash-line{
-    border-bottom: 2px dashed #bcbcbc; margin-top: 20px; display: none;
+    border-bottom: 2px dashed #bcbcbc; 
+    margin-top: 20px; 
+    display: none;
+}
+.section-6{
+    background: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+    border-radius: 10px;
+    border: none!important;
+}
+.section-6-data{
+    color: #264a9f;
+    font-size: 16px;
+}
+.section-6-line{
+    border-left: 2px dashed #bcbcbc;
+    top: 0;
+    margin-left: 14vw;
+    height: 102%;
+    position: absolute;
+}
+.section-6-span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+    position: absolute;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
 }

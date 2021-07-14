@@ -31,6 +31,17 @@
       margin-right: 8vw;
       margin-left: -22vw;
     }
+    .section-6-line{
+      margin-left: 12vw;
+    }
+    #section-6-data-1{
+      flex: 0 !important;
+      margin-left: 10px;
+    }
+    #section-6-data-2, #section-6-data-3, #section-6-data-4 {
+      flex: 0 !important;
+      margin-left: 8vw;
+    }
 }
 @media screen and (max-width: 1200px) {
   .responsive-navbar{
@@ -83,6 +94,12 @@
   }
   .section-5-dash-line{
     display: block;
+  }
+  #section-6{
+    display: none;
+  }
+  .section-6-hidden-card{
+    display: block !important;
   }
 }
 
@@ -138,6 +155,9 @@
   }
   .section-5-card>div{
     padding-left: 25px !important;
+  }
+  .section-6>div{
+    padding-left: 22px!important;
   }
 }
 @media screen and (max-width: 424px) {

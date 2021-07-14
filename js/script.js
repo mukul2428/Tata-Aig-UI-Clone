@@ -79,6 +79,18 @@ function form_input_data(id) {
     });
 }
 
+function section_6_card(){
+
+    let card = document.getElementById("section-6-card").style.display;
+    // console.log(card);
+    if(card == "none"){
+        document.getElementById("section-6-card").style.display = "block";
+    }
+    else{
+        document.getElementById("section-6-card").style.display = "none";
+    }
+}
+
 
 
 
